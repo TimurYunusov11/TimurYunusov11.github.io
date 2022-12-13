@@ -1,0 +1,84 @@
+#c1{
+  height: 700px;
+  width: 700px;
+  border: 0px solid black;
+  background-image:url(treny.jpg);
+}
+
+.transparent-text {
+  font-family: 'Rubik One', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  background: #9599e4;
+  display: table;
+  margin: 20px auto;
+  color: red;
+  border-radius: 5px;
+  mix-blend-mode: multiply;
+  padding: 5px 10px;
+}
+
+
+
+body{
+  background: #c485ff;
+  background-image: -webkit-radial-gradient(cover, rgb(255, 255, 255),#ffffff );
+  background-image: -moz-radial-gradient(cover, #e8eaec, #2478f7);
+  background-image: -o-radial-gradient(cover, #e8eaec, #a4a8ae);
+  background-image: radial-gradient(cover, #e8eaec, #a4a8ae)
+}
+
+html{
+  min-height:100%;
+}
+
+.Navigation{
+  height: 50px;
+    padding: 0;
+  margin: 0;
+  position: absolute;
+}
+
+.Navigation li  {
+  height: auto;
+  width: 130px;
+  float: left;
+  text-align: center;
+  list-style: none;
+  font:12px "Bonveno", "Century Gothic";
+  padding: 0;
+  margin: 0;
+  background-color: #eee;
+  border: 1px solid rgb(255, 0, 0);
+  box-shadow: 0 1px 0 rgba(255, 0, 0, 0.9) inset, 0 1px 3px rgba(255, 0, 0, 0.1);
+  border-radius: 3px;
+  margin-left:7px;
+}
+
+.Navigation a{              
+  padding:8px;
+  text-decoration: none; 
+  color:#333;
+  text-shadow: 0 1px #fff;
+  display: block;
+}
+.Navigation li ul{
+  display: none;
+  height: auto;                 
+  margin-left: -11px;
+  padding: 0;   
+}       
+
+.Navigation li:hover ul{
+  display: block;
+}
+
+.navbar li ul li {
+  background-color:rgb(253, 121, 121);
+    border: 1px solid #ccc;
+} 
+
+.Navigation li:hover, a:hover {
+   background: #e8e8e8;
+} 
+
