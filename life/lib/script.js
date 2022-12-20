@@ -174,11 +174,17 @@ function level3() {
   drawField();
 }
 function level4() {
+  mas[29][25] = 1;
+  mas[30][25] = 1;
+  mas[29][26] = 1;
+  mas[30][27] = 1;
+  mas[30][28] = 1;
+  mas[29][26] = 1;
   level = 4;
-  population = 0;
+  population = 6;
   document.getElementById('popul').innerHTML = population;
   document.getElementById('info').innerHTML =
-    'Размер популяции должен быть равен 3 к 10 поколению';
+    'Размер популяции должен быть равен 6 к 20 поколению';
   drawField();
 }
 function level5() {
@@ -242,10 +248,10 @@ function check3level() {
 function check4level() {
   count_population();
   
-  if (count == 10 && population == 3) {
+  if (count == 20 && population == 6) {
     stopLife();
     document.getElementById('info').innerHTML = 'You score';
-  } else if (count > 10 && population != 3) {
+  } else if (count > 20 && population != 6) {
     stopLife();
     document.getElementById('info').innerHTML = 'Didn’t work, Try again';
   }
